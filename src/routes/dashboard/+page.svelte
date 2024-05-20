@@ -1,10 +1,10 @@
 <script type="ts">
 	import { Button } from '$lib/Components/ui/button';
 	import * as Card from '$lib/components/ui/card';
+	import * as Table from '$lib/components/ui/table';
 </script>
 
 <div class="my-8 text-center text-xl font-bold text-zinc-800 lg:mt-16 lg:text-2xl">DASHBOARD</div>
-
 <div class="mt-3 flex flex-wrap justify-center">
 	<Card.Root class="  m-4 flex w-[450px] shadow-xl ">
 		<figure class=" rounded-sm p-3">
@@ -74,53 +74,8 @@
 	</Card.Root>
 </div>
 
-<div class="mx-4 my-8 overflow-hidden rounded-lg shadow-lg md:mx-12">
-	<table class="w-full table-fixed">
-		<thead>
-			<tr class="bg-zinc-800">
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Name</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">AM Material</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Model</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Average Price</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Savings</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white"></th>
-			</tr>
-		</thead>
-		<tbody class="bg-white">
-			<tr>
-				<td class="border-b border-gray-200 px-6 py-4">Spur Gear</td>
-				<td class="truncate border-b border-gray-200 px-6 py-4">Nylon PA</td>
-				<td class="border-b border-gray-200 px-6 py-4">...</td>
-				<td class="border-b border-gray-200 px-6 py-4">$86.22</td>
-				<td class="border-b border-gray-200 px-6 py-4">-86.22</td>
-				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
-			</tr>
-			<tr>
-				<td class="border-b border-gray-200 px-6 py-4">Spur Gear</td>
-				<td class="truncate border-b border-gray-200 px-6 py-4">Nylon PA</td>
-				<td class="border-b border-gray-200 px-6 py-4">...</td>
-				<td class="border-b border-gray-200 px-6 py-4">$66.22</td>
-				<td class="border-b border-gray-200 px-6 py-4">+86.22</td>
-				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
-			</tr>
-			<tr>
-				<td class="border-b border-gray-200 px-6 py-4">Spur Gear</td>
-				<td class="truncate border-b border-gray-200 px-6 py-4">Nylon PA</td>
-				<td class="border-b border-gray-200 px-6 py-4">...</td>
-				<td class="border-b border-gray-200 px-6 py-4">$54.22</td>
-				<td class="border-b border-gray-200 px-6 py-4">-86.22</td>
-
-				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
-			</tr>
-			<tr>
-				<td class="border-b border-gray-200 px-6 py-4">Spur Gear</td>
-				<td class="truncate border-b border-gray-200 px-6 py-4">Nylon PA</td>
-				<td class="border-b border-gray-200 px-6 py-4">...</td>
-				<td class="border-b border-gray-200 px-6 py-4">$72.22</td>
-				<td class="border-b border-gray-200 px-6 py-4">+86.22</td>
-
-				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
-			</tr>
-		</tbody>
-	</table>
+<div class="my-6 flex justify-center flex-wrap">
+    <Button href="/estimation" class="mx-4 px-12 py-6 text-lg my-2 sm:mx-2 sm:px-8 sm:py-6 sm:text-lg">Estimation</Button>
+    <Button href="/orders" class="mx-4 px-12 py-6 text-lg my-2 sm:mx-2 sm:px-8 sm:py-6 sm:text-lg">Orders</Button>
+    <Button href="/parts" class="mx-4 px-12 py-6 text-lg my-2 sm:mx-2 sm:px-8 sm:py-6 sm:text-lg">Parts</Button>
 </div>

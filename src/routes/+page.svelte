@@ -1,7 +1,7 @@
 <script>
 	import Hero from "$lib/Components/Hero.svelte";
-	import Dashboard from "$lib/Components/Dashboard.svelte";
+	import Landingpage from "$lib/Components/Landingpage.svelte";
 
 </script>
 <Hero/>
-<Dashboard/>
+<Landingpage/>
